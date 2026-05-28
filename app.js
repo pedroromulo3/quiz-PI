@@ -55,3 +55,39 @@ botaoProximo.addEventListener("click", function() {
 
     // Libera para responder novamente
     respondeu = false;
+
+
+// Se ainda tiver pergunta
+    if (perguntaAtual < perguntas.length) {
+
+        perguntas[perguntaAtual].classList.add("ativa");
+
+        numeroPergunta.textContent = "Pergunta " + (perguntaAtual + 1) + " de " + perguntas.length;
+
+        feedback.textContent = "";
+
+    } else {
+
+        resultadoFinal.style.display = "block";
+
+        acertos.textContent = pontos;
+
+        let contaPercentual = pontos / perguntas.length;
+        let resultadoPercentual = contaPercentual * 100;
+        resultadoPercentual = Math.round(resultadoPercentual);
+
+        percentual.textContent = resultadoPercentual + "%";
+
+        if (resultadoPercentual >= 80) {
+            mensagemFinal.textContent = "Excelente! Você conhece muito One Piece!";
+        } else if (resultadoPercentual >= 50) {
+            mensagemFinal.textContent = "Bom resultado! Mas ainda dá para melhorar.";
+        } else {
+            mensagemFinal.textContent = "Você precisa assistir mais One Piece!";
+        }
+
+        botaoProximo.style.display = "none";
+        feedback.textContent = "";
+    }
+
+});
