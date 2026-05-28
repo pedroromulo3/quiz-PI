@@ -96,8 +96,7 @@ h1 {
 }
 
 /* Botão de próxima pergunta */
-#botaoProximo,
-#botaoReiniciar {
+#botaoProximo {
     width: 100%;
     padding: 12px;
     margin-top: 15px;
@@ -113,10 +112,8 @@ h1 {
 }
 
 /* Efeito nos botões principais */
-#botaoProximo:hover,
-#botaoReiniciar:hover {
-    background-color: #083b66;
-}
+#botaoProximo:hover
+
 
 /* Resultado final começa escondido */
 #resultadoFinal {
@@ -139,4 +136,8 @@ h1 {
     .pergunta h2 {
         font-size: 18px;
     }
+}
+/* Resultado final começa escondido */
+#resultadoFinal {
+    display: none;
 }
