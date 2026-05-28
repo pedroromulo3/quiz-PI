@@ -1,11 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <title>Quiz One Piece</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>One Piece Quiz</h1>
+
+    <div class="container">
+
+        <h1>Quiz de One Piece</h1>
+
+        <p class="descricao">
+            Responda às perguntas e teste seus conhecimentos sobre One Piece.
+        </p>
+
+        <div class="informacoes">
+            <p id="numeroPergunta">Pergunta 1 de 10</p>
+            <p>Pontuação: <span id="pontuacao">0</span></p>
+        </div>
+
+        <div id="areaQuiz">
+
+            <div class="pergunta ativa">
+                <h2>1. Qual é o sonho de Monkey D. Luffy?</h2>
+
+                <button class="alternativa">Ser o maior espadachim do mundo</button>
+                <button class="alternativa Alternativa_Correta">Se tornar o Rei dos Piratas</button>
+                <button class="alternativa">Virar Almirante da Marinha</button>
+                <button class="alternativa">Encontrar o All Blue</button>
+            </div>
+
+            <div class="pergunta">
+                <h2>2. Quem é o espadachim dos Chapéus de Palha?</h2>
+
+                <button class="alternativa">Sanji</button>
+                <button class="alternativa Alternativa_Correta">Roronoa Zoro</button>
+                <button class="alternativa">Usopp</button>
+                <button class="alternativa">Brook</button>
+            </div>
+
+            <div class="pergunta">
+                <h2>3. Qual fruta do diabo Luffy comeu?</h2>
+
+                <button class="alternativa Alternativa_Correta">Gomu Gomu no Mi</button>
+                <button class="alternativa">Mera Mera no Mi</button>
+                <button class="alternativa">Bara Bara no Mi</button>
+                <button class="alternativa">Yami Yami no Mi</button>
+            </div>
+
+            <div class="pergunta">
+                <h2>4. Quem é a navegadora da tripulação?</h2>
+
+                <button class="alternativa">Robin</button>
+                <button class="alternativa">Vivi</button>
+                <button class="alternativa Alternativa_Correta">Nami</button>
+                <button class="alternativa">Boa Hancock</button>
+            </div>
+
+            <div class="pergunta">
+                <h2>5. Qual é o nome do primeiro navio dos Chapéus de Palha?</h2>
+
+                <button class="alternativa Alternativa_Correta">Going Merry</button>
+                <button class="alternativa">Thousand Sunny</button>
+                <button class="alternativa">Oro Jackson</button>
+                <button class="alternativa">Red Force</button>
+            </div>
+
+            <div class="pergunta">
+                <h2>6. Quem é o cozinheiro da tripulação?</h2>
+
+                <button class="alternativa">Zoro</button>
+                <button class="alternativa">Franky</button>
+                <button class="alternativa Alternativa_Correta">Sanji</button>
+                <button class="alternativa">Chopper</button>
+            </div>
+
+            <div class="pergunta">
+                <h2>7. Quem é o médico dos Chapéus de Palha?</h2>
+
+                <button class="alternativa">Jinbe</button>
+                <button class="alternativa Alternativa_Correta">Tony Tony Chopper</button>
+                <button class="alternativa">Usopp</button>
+                <button class="alternativa">Brook</button>
+            </div>
+
+            <div class="pergunta">
+                <h2>8. Quem foi conhecido como o Rei dos Piratas?</h2>
+
+                <button class="alternativa">Shanks</button>
+                <button class="alternativa">Barba Branca</button>
+                <button class="alternativa Alternativa_Correta">Gol D. Roger</button>
+                <button class="alternativa">Kaido</button>
+            </div>
+
+            <div class="pergunta">
+                <h2>9. Qual é o sonho de Sanji?</h2>
+
+                <button class="alternativa">Ser o Rei dos Piratas</button>
+                <button class="alternativa Alternativa_Correta">Encontrar o All Blue</button>
+                <button class="alternativa">Criar um mapa do mundo</button>
+                <button class="alternativa">Ser o melhor arqueólogo</button>
+            </div>
+
+            <div class="pergunta">
+                <h2>10. Quem é o arqueólogo da tripulação?</h2>
+
+                <button class="alternativa">Nami</button>
+                <button class="alternativa">Vivi</button>
+                <button class="alternativa Alternativa_Correta">Nico Robin</button>
+                <button class="alternativa">Perona</button>
+            </div>
+
+        </div>
+
+        <p id="feedback"></p>
+
+        <button id="botaoProximo">Próxima pergunta</button>
+
+        <div id="resultadoFinal">
+            <h2>Resultado Final</h2>
+
+            <p>Acertos: <span id="acertos">0</span></p>
+            <p>Percentual: <span id="percentual">0%</span></p>
+            <p id="mensagemFinal"></p>
+
+            <button id="botaoReiniciar">Reiniciar</button>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
