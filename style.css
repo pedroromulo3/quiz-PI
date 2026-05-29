@@ -76,7 +76,6 @@ h1 {
     background-color: #dceeff;
 }
 
-/* Você pode usar essas classes pelo JavaScript */
 .correta {
     background-color: #b7f7b7;
     border-color: green;
@@ -126,17 +125,6 @@ h1 {
     text-align: center;
 }
 
-/* Responsividade básica para celular */
-@media (max-width: 500px) {
-    .informacoes {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .pergunta h2 {
-        font-size: 18px;
-    }
-}
 /* Resultado final começa escondido */
 #resultadoFinal {
     display: none;
